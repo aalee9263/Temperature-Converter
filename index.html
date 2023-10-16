@@ -2,18 +2,20 @@
 <html>
 <head>
     <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="converter">
-        <h2>Temperature Converter</h2>
-        <input type="number" id="temperature" placeholder="Enter temperature">
-        <select id="fromUnit">
-            <option value="celsius">Celsius (°C)</option>
-            <option value="fahrenheit">Fahrenheit (°F)</option>
-        </select>
-        <button onclick="convertTemperature()">Convert</button>
-        <p id="result">Result: </p>
-    </div>
+        <!-- <h2>Temperature Converter</h2> -->
+        <form class="container">
+            <label for="celsius">Celsius</label>
+            <input type="number" id="celsius" class="box">
+        </form>
+        <form class="container">
+            <label for="farenheit">Farenheit</label>
+            <input type="number" id="farenheit" class="box">
+        </form>
     <script src="converter.js"></script>
 </body>
 </html>
