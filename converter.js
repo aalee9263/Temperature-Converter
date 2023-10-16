@@ -1,18 +1,11 @@
-function convertTemperature() {
-    // Get user inputs
-    const temperature = parseFloat(document.getElementById("temperature").value);
-    const fromUnit = document.getElementById("fromUnit").value;
-    
-    // Perform the conversion
-    let result = 0;
+let celsius = document.getElementById("celsius")
+let farenheit = document.getElementById("farenheit")
 
-    if (fromUnit === "celsius") {
-        result = (temperature * 9/5) + 32;
-    } else if (fromUnit === "fahrenheit") {
-        result = (temperature - 32) * 5/9;
-    }
-
-    // Display the result
-    const resultElement = document.getElementById("result");
-    resultElement.textContent = `Result: ${result.toFixed(2)} ${fromUnit === "celsius" ? "°F" : "°C"}`;
+function celToFar(){
+    let output = (parseFloat(celsius.value)* 9/5+32)
+    farenheit.value = parseFloat(output.toFixed(2));
+}
+function farToCel(){
+    let output = (parseFloat(farenheit.value) -32 ) * 5/9;
+    celsius.value = parseFloat(output.toFixed(2));
 }

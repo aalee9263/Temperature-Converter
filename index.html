@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Temperature Converter</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h2 style="letter-spacing: 7px; line-height: 40px;">Temperature Converter</h2>
-    <div class="converter">
-        <!-- <h2>Temperature Converter</h2> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 style="letter-spacing: 7px; line-height: 40px">
+      Temperature Converter
+    </h2>
+      <div class="converter">
         <form class="container">
-            <label for="celsius">Celsius (°C)</label>
-            <input type="number" id="celsius" class="box">
+          <label for="celsius">Celsius (°C)</label>
+          <input type="number" id="celsius" oninput="celToFar()" />
         </form>
         <form class="container">
-            <label for="farenheit">Farenheit (°F)</label>
-            <input type="number" id="farenheit" class="box">
+          <label for="farenheit">Farenheit (°F)</label>
+          <input type="number" id="farenheit" oninput="farToCel()" />
         </form>
+      </div>
     <script src="converter.js"></script>
-</body>
+  </body>
 </html>

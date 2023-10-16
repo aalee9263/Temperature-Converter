@@ -40,7 +40,7 @@ input{
     width: 90%;
     border: 1px solid #717377;
     box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
-    border-radius: 16px;
+    border-radius: 10px;
     padding: 3px;
     margin: 10px 10px;
     background: transparent;
@@ -49,7 +49,9 @@ input{
     cursor: pointer;
     color: #ffffff;
 }
-h2{
-    align-items: center;
-    align-items: baseline;
+.formula{
+    display: flex;
+    flex-direction: row;
+    
+
 }
